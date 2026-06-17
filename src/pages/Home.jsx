@@ -8,30 +8,39 @@ import BeyondCoding from "../components/BeyondCoding";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+// import Journey from "../components/Journey";
 
 const Home = () => {
 return (
 <> <Navbar />
 
   <main>
+    
     <Hero />
 
-    <MyStory />
+<MyStory />
 
-    <Experience />
+<Experience />
 
-    <Skills />
+<Skills />
 
-    <Leadership />
+{/* <Journey /> */}
 
-    <BeyondCoding />
+<Leadership />
 
-    <Projects />
+<BeyondCoding />
 
-    <Contact />
+<Projects />
+
+<Contact />
+
+
+
   </main>
 
   <Footer />
+
+  
 </>
 
 );
