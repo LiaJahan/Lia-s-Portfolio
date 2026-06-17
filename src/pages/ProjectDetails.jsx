@@ -8,12 +8,10 @@ const ProjectDetails = () => {
 
   if (!project) {
     return (
-      <section className="section-container">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="section-title">
-            Project Not Found
-          </h1>
-        </div>
+      <section className="section-container min-h-[60vh] flex items-center justify-center">
+        <h1 className="heading-font text-4xl">
+          Project Not Found
+        </h1>
       </section>
     );
   }
@@ -24,13 +22,11 @@ const ProjectDetails = () => {
       "Managing book delivery workflows efficiently.",
       "Building a responsive user experience across devices.",
     ],
-
     "paw-mart": [
       "Organizing and displaying product data efficiently.",
       "Creating an intuitive shopping experience.",
       "Maintaining consistent UI and performance.",
     ],
-
     "say-it-right": [
       "Structuring vocabulary content effectively.",
       "Presenting Bengali pronunciation clearly.",
@@ -44,13 +40,11 @@ const ProjectDetails = () => {
       "Real-time courier tracking.",
       "Admin analytics dashboard.",
     ],
-
     "paw-mart": [
       "Shopping cart and checkout functionality.",
       "Product reviews and ratings.",
       "Wishlist system.",
     ],
-
     "say-it-right": [
       "Audio pronunciation support.",
       "Vocabulary quizzes.",
@@ -59,134 +53,170 @@ const ProjectDetails = () => {
   };
 
   return (
-    <section className="section-container">
-      <div className="max-w-5xl mx-auto">
+    <section className="section-container py-24">
+      <div className="max-w-6xl mx-auto">
 
-        {/* Banner Image */}
+        {/* Header */}
+        <div className="max-w-4xl mb-20">
+          <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] mb-4">
+            Featured Project
+          </p>
 
-        <img
-          src={project.image}
-          alt={project.name}
-          className="
-            w-full
-            rounded-[24px]
-            shadow-lg
-            mb-16
-          "
-        />
+          <h1 className="heading-font text-5xl md:text-7xl leading-tight mb-8">
+            {project.name}
+          </h1>
 
-        {/* Title */}
+          <p className="text-lg md:text-xl leading-relaxed text-[var(--text-muted)]">
+            {project.description} <br /><br />
+          </p>
+        </div>
 
-        <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] mb-4">
-          Project Details
-        </p>
+        {/* Hero Image */}
+        <div className="mb-24 overflow-hidden rounded-3xl">
+          <img
+            src={project.image}
+            alt={project.name}
+            className="w-full object-cover"
+          /> <br /><br />
+        </div>
 
-        <h1 className="section-title">
-          {project.name}
-        </h1>
+        {/* Info */}
+        <section className="py-12 border-y border-[var(--border)]">
+          <div className="grid md:grid-cols-3 gap-10">
 
-        <p className="text-lg text-[var(--text-muted)] leading-8 max-w-3xl">
-          {project.description}
-        </p>
+            <div>
+              <p className="text-sm text-[var(--text-muted)] mb-2">
+                Role
+              </p>
 
-        {/* Tech Stack */}
+              <p className="text-xl font-medium">
+                Frontend Developer
+              </p> 
+            </div>
 
-        <div className="mt-20">
-          <h2 className="heading-font text-4xl mb-8">
-            Technology Stack
-          </h2>
+            <div>
+              <br /><br />
+              <p className="text-sm text-[var(--text-muted)] mb-2">
+                Type
+              </p>
 
-          <div className="flex flex-wrap gap-4">
+              <p className="text-xl font-medium">
+                Personal Project
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm text-[var(--text-muted)] mb-2">
+                Status
+              </p>
+
+              <p className="text-xl font-medium">
+                Completed
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <br />
+
+        {/* Links */}
+        <section className="py-16 flex flex-wrap gap-4">
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noreferrer"
+            className="primary-btn"
+          >
+            View Live Site
+          </a>
+
+          
+        </section>
+
+        <br />
+
+        {/* Technologies */}
+        <section className="py-20 border-t border-[var(--border)]">
+          <br /><h2 className="heading-font text-3xl md:text-4xl mb-10">
+            Technologies Used
+          </h2><br />
+
+          <div className="flex flex-wrap gap-x-10 gap-y-4 text-lg">
             {project.tech.map((tech) => (
-              <span
-                key={tech}
-                className="
-                  px-5
-                  py-2
-                  rounded-full
-                  border
-                  border-[var(--border)]
-                "
-              >
+              <span key={tech}>
                 {tech}
               </span>
             ))}
           </div>
-        </div>
-
-        {/* Links */}
-
-        <div className="mt-20">
-          <h2 className="heading-font text-4xl mb-8">
-            Project Links
-          </h2>
-
-          <div className="flex flex-wrap gap-4">
-
-            <a
-              href={project.live}
-              target="_blank"
-              rel="noreferrer"
-              className="primary-btn"
-            >
-              Live Project
-            </a>
-
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="outline-btn px-6 py-3"
-            >
-              GitHub Repository
-            </a>
-
-          </div>
-        </div>
-
+          <br />
+        </section>
+<br />
         {/* Challenges */}
-
-        <div className="mt-20">
-          <h2 className="heading-font text-4xl mb-8">
+        <section className="py-20 border-t border-[var(--border)]">
+         <br /> <h2 className="heading-font text-3xl md:text-4xl mb-14">
             Challenges Faced
           </h2>
-
-          <ul className="space-y-4">
+<br />
+          <div className="space-y-16">
             {challenges[id]?.map((item, index) => (
-              <li
+              <div
                 key={index}
-                className="
-                  text-[var(--text-muted)]
-                  leading-8
-                "
+                className="grid md:grid-cols-[100px_1fr] gap-8"
               >
-                • {item}
-              </li>
+                <span className="text-5xl md:text-6xl font-bold text-[var(--text-muted)]/20">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <p className="text-lg leading-relaxed max-w-3xl">
+                  {item}
+                </p>
+              </div>
             ))}
-          </ul>
-        </div>
-
-        {/* Improvements */}
-
-        <div className="mt-20">
-          <h2 className="heading-font text-4xl mb-8">
+          </div>
+          <br />
+        </section>
+        {/* Future Improvements */}
+        <section className="py-20 border-t border-[var(--border)]">
+          <br /><h2 className="heading-font text-3xl md:text-4xl mb-14">
             Future Improvements
           </h2>
 
-          <ul className="space-y-4">
+          <div className="space-y-10">
             {improvements[id]?.map((item, index) => (
-              <li
+              <div
                 key={index}
-                className="
-                  text-[var(--text-muted)]
-                  leading-8
-                "
+                className="flex items-start gap-6"
               >
-                • {item}
-              </li>
+                <span className="text-2xl">
+                  →
+                </span>
+
+                <p className="text-lg leading-relaxed">
+                  {item}
+                </p>
+              </div>
             ))}
-          </ul>
-        </div>
+          </div><br />
+        </section>
+
+        {/* Outcome */}
+        <section className="py-20 border-t border-[var(--border)]">
+         <br /> <h2 className="heading-font text-3xl md:text-4xl mb-10">
+            Project Outcome
+          </h2>
+
+          <div className="max-w-4xl">
+            <p className="text-lg md:text-xl leading-relaxed text-[var(--text-muted)]">
+              This project strengthened my skills in React,
+              responsive design, component architecture,
+              API integration, and modern frontend development.
+              It provided valuable experience in building a
+              complete user-focused application from planning
+              and design to deployment.
+            </p>
+          </div>
+        </section>
 
       </div>
     </section>
