@@ -4,5 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "https://liajahan.github.io/Lia-s-Portfolio/",
+  base: "/Lia-s-Portfolio/",
 });
