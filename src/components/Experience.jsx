@@ -23,7 +23,7 @@ description:
 {
 year: "2017 — 2019",
 title: "Planner & Designer",
-company: "Surprise Event Planner",
+company: "Surprise Event Planner, Bangladesh",
 description:
 "Planned events, coordinated client communications, and contributed to creative event execution.",
 },
