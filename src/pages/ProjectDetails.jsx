@@ -94,16 +94,16 @@ const ProjectDetails = () => {
               </p> 
             </div>
 
-            <div>
+            {/* <div>
               <br /><br />
               <p className="text-sm text-[var(--text-muted)] mb-2">
                 Type
               </p>
 
               <p className="text-xl font-medium">
-                Personal Project
+                Course Required Project
               </p>
-            </div>
+            </div> */}
 
             <div>
               <p className="text-sm text-[var(--text-muted)] mb-2">
