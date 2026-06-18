@@ -26,11 +26,11 @@ skills: ["Python", "Microsoft Office"],
 
 const Skills = () => {
 return ( <section id="skills" className="section-container"> <div className="max-w-6xl mx-auto">
-    <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] mb-4">
+    <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] !mb-4">
       Technical Skills
     </p>
 
-    <h2 className="section-title mb-20">
+    <h2 className="section-title">
       What I Work With
     </h2>
 
@@ -40,7 +40,7 @@ return ( <section id="skills" className="section-container"> <div className="max
         <div
           key={group.title}
           className="
-            grid
+            !mt-4 grid
             md:grid-cols-[260px_1fr]
             gap-6
             md:gap-12
@@ -53,7 +53,7 @@ return ( <section id="skills" className="section-container"> <div className="max
             {group.title}
           </h3>
 
-          <div className="flex flex-wrap gap-x-6 gap-y-3">
+          <div className="flex flex-wrap gap-x-7 !mb-3 ">
             {group.skills.map((skill) => (
               <span
                 key={skill}

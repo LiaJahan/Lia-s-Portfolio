@@ -6,7 +6,7 @@ const Projects = () => {
     <section id="projects" className="section-container">
       <div className="max-w-6xl mx-auto">
 
-        <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] mb-4">
+        <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] !mb-4">
           Featured Work
         </p>
 
@@ -14,7 +14,7 @@ const Projects = () => {
           Things I've Built
         </h2>
 
-        <div className="grid lg:grid-cols-3 gap-8 mt-16">
+        <div className="grid lg:grid-cols-3 gap-8 !mt-6">
 
           {projects.map((project) => (
             <div
@@ -27,13 +27,13 @@ const Projects = () => {
                 className="h-56 w-full object-cover"
               />
 
-              <div className="p-8">
+              <div className="!p-3">
 
                 <h3 className="text-2xl font-semibold">
                   {project.name}
                 </h3>
 
-                <p className="mt-4 text-[var(--text-muted)]">
+                <p className="!mt-1 text-[var(--text-muted)]">
                   {project.description}
                 </p>
 
@@ -41,7 +41,7 @@ const Projects = () => {
                   to={`/project/${project.id}`}
                   className="
                   inline-block
-                  mt-6
+                  !mt-3
                   primary-btn
                   "
                 >

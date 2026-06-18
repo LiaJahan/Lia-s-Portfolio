@@ -39,7 +39,7 @@ description:
 const Experience = () => {
 return ( <section id="experience" className="section-container"> <div className="max-w-5xl mx-auto">
 
-    <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] mb-4">
+    <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)]">
       Professional Journey
     </p>
 
@@ -47,7 +47,7 @@ return ( <section id="experience" className="section-container"> <div className=
       Experience
     </h2>
 
-    <div className="mt-20 relative">
+    <div className="relative">
 
       {/* Timeline Line */}
 
@@ -114,13 +114,13 @@ return ( <section id="experience" className="section-container"> <div className=
                 {exp.title}
               </h3>
 
-              <p className="mt-2 text-[var(--accent)]">
+              <p className="text-[var(--accent)]">
                 {exp.company}
               </p>
 
               <p
                 className="
-                mt-6
+                !mt-1 !mb-4
                 text-[var(--text-muted)]
                 leading-8
                 max-w-3xl

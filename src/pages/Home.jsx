@@ -16,7 +16,7 @@ return (
 
   <main>
     
-    <Hero />
+  <Hero />
 
 <MyStory />
 
@@ -38,7 +38,7 @@ return (
 
   </main>
 
-  <Footer />
+  {/* <Footer /> */}
 
   
 </>

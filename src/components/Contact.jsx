@@ -2,7 +2,7 @@ import { FaEnvelope, FaWhatsapp, FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
 return ( <section id="contact" className="section-container"> <div className="max-w-5xl mx-auto">
-    <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] mb-4">
+    <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] !mb-1">
       Let's Connect
     </p>
 
@@ -10,16 +10,16 @@ return ( <section id="contact" className="section-container"> <div className="ma
       Get In Touch
     </h2>
 
-    <p className="max-w-2xl text-[var(--text-muted)] leading-8 mb-20">
+    <p className="max-w-2xl text-[var(--text-muted)] leading-8">
       Whether you're looking for a developer, have a project in mind,
       or simply want to connect, I'd be happy to hear from you.
     </p>
 
     <div className="space-y-10">
 
-      <div className="grid md:grid-cols-[180px_1fr] gap-6 pb-8 border-b border-[var(--border)]">
+      <div className="!p-2 grid md:grid-cols-[180px_1fr] gap-6 pb-8 border-b border-[var(--border)]">
         <div className="flex items-center gap-3">
-          <FaEnvelope className="text-lg" />
+          <FaEnvelope className=" text-lg" />
           <span className="font-medium">
             Email
           </span>
@@ -33,7 +33,7 @@ return ( <section id="contact" className="section-container"> <div className="ma
         </a>
       </div>
 
-      <div className="grid md:grid-cols-[180px_1fr] gap-6 pb-8 border-b border-[var(--border)]">
+      <div className="!p-2  grid md:grid-cols-[180px_1fr] gap-6 !pt-. border-b border-[var(--border)]">
         <div className="flex items-center gap-3">
           <FaWhatsapp className="text-lg" />
           <span className="font-medium">
@@ -51,7 +51,7 @@ return ( <section id="contact" className="section-container"> <div className="ma
         </a>
       </div>
 
-      <div className="grid md:grid-cols-[180px_1fr] gap-6 pb-8 border-b border-[var(--border)]">
+      <div className="!p-2 grid md:grid-cols-[180px_1fr] gap-6  border-b border-[var(--border)]">
         <div className="flex items-center gap-3">
           <FaLocationDot className="text-lg" />
           <span className="font-medium">

@@ -46,28 +46,25 @@ return(
           "
         >
           Jesmoon
-          <br />
-          Jahan Lia <br />
+          Jahan Lia
         </h1>
 
         <p
           className="
-          mt-8
-          text-lg
+          !mt-4 text-lg
           md:text-xl
           leading-relaxed
           max-w-xl
           text-[var(--text-muted)]
           "
         >
-         <br /> Multilingual CSE Graduate transitioning into
-          AI & Web Development. <br /><br />
+         Multilingual CSE Graduate transitioning into
+          AI & Web Development.
         </p>
 
         <p
           className="
-          mt-6
-          italic
+          !mt-2
           text-l
           text-[var(--accent)]
           "
@@ -127,7 +124,7 @@ return(
       {/* RIGHT SIDE */}
 
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.8,
@@ -139,10 +136,10 @@ return(
           className="
           absolute
           inset-0
-          rounded-[40px]
+          rounded-[30px]
           translate-x-5
           translate-y-5
-          -z-10
+          -z-5
           bg-[var(--accent)]
           opacity-20
           "
@@ -155,7 +152,7 @@ className="
 w-full
 max-w-md
 mx-auto
-rounded-[40px]
+rounded-[30px]
 shadow-xl
 object-cover
 

@@ -18,7 +18,7 @@ const BeyondCoding = () => {
     <section id="beyondcoding" className="section-container">
       <div className="max-w-6xl mx-auto">
 
-        <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] mb-4">
+        <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] !mb-4">
           Beyond Coding
         </p>
 
@@ -26,7 +26,7 @@ const BeyondCoding = () => {
           Things I Enjoy
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 !mt-10">
 
           {hobbies.map((hobby) => (
             <div

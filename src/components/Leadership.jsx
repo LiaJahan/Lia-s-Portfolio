@@ -3,13 +3,13 @@ const leaderships = [
 title: "Jr. Vice President",
 organization: "Debating Forum of IUBAT (DFI)",
 description:
-"Contributed to organizational activities, leadership initiatives, and community engagement projects.",
+"Organized debates, forums, and student activities while supporting promotion, registration, and coordination. Monitored new members training and ensured effective communication between faculty members, organizers, and students.",
 },
 {
 title: "Assistant Academic Manager",
 organization: "IUBAT IT Society",
 description:
-"Supported academic activities, student engagement, and technology-focused programs within the university community.",
+"Supported academic activities, student engagement, and programs within the university community.",
 },
 {
 title: "Programming Contest Volunteer",
@@ -28,11 +28,11 @@ description:
 const Leadership = () => {
 return ( <section id="leadership" className="section-container"> <div className="max-w-6xl mx-auto">
 
-    <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] mb-4">
+    <p className="uppercase tracking-[4px] text-sm text-[var(--text-muted)] !mb-4">
       Leadership & Activities
     </p>
 
-    <h2 className="section-title mb-20">
+    <h2 className="section-title !mb-4">
       Beyond Professional Work
     </h2>
 
@@ -46,23 +46,22 @@ return ( <section id="leadership" className="section-container"> <div className=
             md:grid-cols-[280px_1fr]
             gap-6
             md:gap-12
-            pb-12
             border-b
             border-[var(--border)]
           "
         >
           <div>
-            <p className="text-sm uppercase tracking-[2px] text-[var(--accent)]">
+            <p className="!mt-4 text-sm uppercase tracking-[2px] text-[var(--accent)]">
               {item.organization}
             </p>
           </div>
 
           <div>
-            <h3 className="heading-font text-2xl md:text-3xl mb-4">
+            <h3 className="heading-font text-2xl md:text-3xl !mb-2">
               {item.title}
             </h3>
 
-            <p className="text-[var(--text-muted)] leading-8 max-w-3xl">
+            <p className="text-[var(--text-muted)] leading-8 max-w-3xl !mb-3">
               {item.description}
             </p>
           </div>

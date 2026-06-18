@@ -60,7 +60,7 @@ return ( <nav
 
     <a
       href="#home"
-      className="
+      className=" !m-3
       heading-font
       text-3xl
       md:text-4xl

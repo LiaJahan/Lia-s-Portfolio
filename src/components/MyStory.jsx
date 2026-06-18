@@ -34,26 +34,27 @@ const MyStory = () => {
             both functional and visually appealing.
           </p>
 
-          <p className="text-lg leading-9 text-[var(--text-muted)] mt-8">
+          <p className="text-lg leading-9 text-[var(--text-muted)]">
             Beyond technology, I enjoy reading, traveling, photography,
             countryside driving, listening to podcasts and music, cooking,
             spending time with cats, decorating spaces, and creating henna
-            designs. I believe curiosity is one of life's greatest gifts,
-            and I try to bring that curiosity into everything I do. <br /> <br />
+            designs. 
+          </p><p className="!mb-4 text-lg leading-9 text-[var(--text-muted)]">
+            I believe meaningful growth comes from dedication and consistency. Rather than trying to learn a little about everything, I prefer focusing deeply on the things I truly care about and developing real expertise over time. Whether it's technology, creativity, or personal goals, I value quality, commitment, and continuous improvement.
           </p>
 
         </div>
 
         {/* INFO SECTION */}
 
-        <div className="mt-20 pt-10 border-t border-[var(--border)]">
+        <div className="border-t border-[var(--border)]">
 
           <div className="grid md:grid-cols-3 gap-10">
 
             {/* Education */}
 
             <div>
-              <h3 className="heading-font text-4xl mb-4">
+              <h3 className="heading-font text-4xl !mb-4">
                 <br /> Education
               </h3>
 
@@ -61,11 +62,11 @@ const MyStory = () => {
                 B.Sc. in Computer Science & Engineering
               </p>
 
-              <p className="text-[var(--text-muted)] mt-2">
+              <p className="text-[var(--text-muted)] !mt-2">
                 IUBAT - International University of Business Agriculture and Technology
               </p>
 
-              <p className="text-[var(--text-muted)]">
+              <p className="text-[var(--text-muted)] !mt-1 ">
                 CGPA: 3.60 / 4.00
               </p>
             </div>
@@ -73,15 +74,15 @@ const MyStory = () => {
             {/* Languages */}
 
             <div>
-              <h3 className="heading-font text-4xl mb-4">
+              <h3 className="heading-font text-4xl !mb-4">
                 <br /> Languages
               </h3>
 
-              <ul className="space-y-2 text-[var(--text-muted)]">
-                <li>Bengali (Native)</li>
-                <li>English (IELTS Speaking 7)</li>
-                <li>Swedish (Conversational) </li>
-                <li>Hindi (Conversational fluency) </li>
+              <ul className=" space-y-2 text-[var(--text-muted)]">
+                <li className="!mb-1">Bengali (Native)</li>
+                <li className="!mb-1">English (IELTS Speaking 7)</li>
+                <li className="!mb-1">Swedish (Conversational) </li>
+                <li className="!mb-1">Hindi (Conversational fluency) </li>
                 <li>Spanish (Beginner)</li>
               </ul>
             </div>
@@ -89,7 +90,7 @@ const MyStory = () => {
             {/* Location */}
 
             <div>
-              <h3 className="heading-font text-4xl mb-4">
+              <h3 className="heading-font text-4xl !mb-4">
                 <br /> Location
               </h3>
 
