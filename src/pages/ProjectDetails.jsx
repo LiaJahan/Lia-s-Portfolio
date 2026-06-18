@@ -19,12 +19,12 @@ const ProjectDetails = () => {
   const challenges = {
     "book-courier": [
       "Implementing secure authentication and protected routes.",
-      "Managing book delivery workflows efficiently.",
+      "Managing database efficiently.",
       "Building a responsive user experience across devices.",
     ],
     "paw-mart": [
-      "Organizing and displaying product data efficiently.",
-      "Creating an intuitive shopping experience.",
+      "Organizing and displaying data efficiently.",
+      "Creating an intuitive experience.",
       "Maintaining consistent UI and performance.",
     ],
     "say-it-right": [
@@ -46,8 +46,8 @@ const ProjectDetails = () => {
       "Wishlist system.",
     ],
     "say-it-right": [
-      "Audio pronunciation support.",
-      "Vocabulary quizzes.",
+      "Login system.",
+      "Real time customer support.",
       "User progress tracking.",
     ],
   };
